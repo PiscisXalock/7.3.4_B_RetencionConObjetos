@@ -26,7 +26,7 @@ public class Empleado {
         } else if (salario >= 3000) {
             this.retencion = 20;
         }
-        this.salarioNeto = (((retencion * salario) / 100) - salario);
+        this.salarioNeto = salario - retencion * salario/ 100;
     }
 
     public double getSalario() {
